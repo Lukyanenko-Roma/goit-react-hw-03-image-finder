@@ -7,7 +7,6 @@ import Button from "./components/Button";
 import Modal from "./components/Modal";
 import PixabayApi from "./services/pixabayApi";
 
-
 class App extends Component {
   state = {
     images: [],
@@ -83,10 +82,10 @@ class App extends Component {
             {isLoading && (
               <ReactLoading
                 className="spinner"
-                type="Grid"
-                color="##00BFFF"
-                height={80}
-                width={80}
+                type="spin"
+                color="#303f9f"
+                height={50}
+                width={50}
               />
             )}
             {shouldRenderBtn && <Button onClick={this.fetchImages} />}
@@ -101,3 +100,4 @@ class App extends Component {
 }
 
 export default App;
+

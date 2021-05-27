@@ -12,3 +12,4 @@ const ImageGalleryItem = ({ src, srcLarge, onClick }) => {
 };
 
 export default ImageGalleryItem;
+

@@ -1,4 +1,4 @@
-import ImageGalleryItem from "../ImageGalleryItem";
+import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
 
 const ImageGallery = ({ items, onClick, children }) => {
   return (
@@ -18,3 +18,4 @@ const ImageGallery = ({ items, onClick, children }) => {
   );
 };
 export default ImageGallery;
+
