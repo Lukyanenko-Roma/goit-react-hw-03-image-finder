@@ -19,17 +19,16 @@ export default class Modal extends Component {
   }
 
   handleKeyPressESC = e => {
-    if (e.keyCode === "Escape") {
+    if (e.key === "Escape") {
       this.props.onClose();
     }
   };
 
-  handleBackdropClick = e => {
-    const { currentTarget, target } = this.overlayRef;
-    if (currentTarget === target) {
-      this.props.onClose();
-    }
-  };
+  handleBackdropClick = event => {
+		if (event.currentTarget === event.target) {
+			this.props.onClose()
+		};
+	};
 
   render() {
     return (

@@ -82,8 +82,8 @@ class App extends Component {
             {isLoading && (
               <ReactLoading
                 className="spinner"
-                type="spin"
-                color="#303f9f"
+                type="Circles"
+                color="#00BFFF"
                 height={50}
                 width={50}
               />
